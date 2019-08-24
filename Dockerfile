@@ -11,4 +11,6 @@ RUN apt-get update && apt-get install -y lcov
 
 ENV PATH=$PATH:/flutter/bin
 
+RUN echo $PATH
+
 RUN flutter doctor -v
