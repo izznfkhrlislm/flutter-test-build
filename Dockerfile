@@ -3,7 +3,7 @@ FROM runmymind/docker-android-sdk
 ENV FLUTTER_CHANNEL=stable
 ENV FLUTTER_VERSION=1.17.2-${FLUTTER_CHANNEL}
 
-RUN wget --quiet --output-document=flutter.tar.xz https://storage.googleapis.com/flutter_infra/releases/${FLUTTER_CHANNEL}/linux/flutter_linux_v${FLUTTER_VERSION}.tar.xz \
+RUN wget --quiet --output-document=flutter.tar.xz https://storage.googleapis.com/flutter_infra/releases/${FLUTTER_CHANNEL}/linux/flutter_linux_${FLUTTER_VERSION}.tar.xz \
     && tar xf flutter.tar.xz -C / \
     && rm flutter.tar.xz
 
